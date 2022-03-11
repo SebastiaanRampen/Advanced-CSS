@@ -1,0 +1,32 @@
+body {
+  background-color: #c3cfe2;
+}
+
+.container {
+  margin: 30px;
+  display: grid;
+  grid-row-gap: 0px;
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr;
+}
+.container div img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #6f665d;
+  border-radius: 30px;
+  transition-duration: 250ms;
+  transition-delay: 250ms;
+}
+.container input {
+  visibility: hidden;
+  position: relative;
+  top: -48%;
+  left: 35%;
+}
+
+.container > div > img:hover {
+  filter: brightness(25%);
+}
+.container > div > img:hover ~ input {
+  visibility: visible;
+}/*# sourceMappingURL=index.css.map */

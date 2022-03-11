@@ -1,0 +1,7 @@
+@mixin before_setup($font) {
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var($font);
+}

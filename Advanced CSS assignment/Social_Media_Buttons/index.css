@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #c3cfe2;
+  display: grid;
+  grid-template-rows: 1fr 240px 1fr;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  grid-row: 2;
+  right: -250px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+.social-media i {
+  padding: 12px;
+  color: white;
+  width: 280px;
+  font-size: 16px;
+  transition-duration: 1000ms;
+}
+.social-media i a {
+  display: inline;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.fa-laptop-code {
+  background-color: #e17b77;
+}
+
+.fa-laptop-code::before {
+  content: "\f5fc";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+}
+
+.fa-researchgate {
+  background-color: #00d0af;
+}
+
+.fa-researchgate::before {
+  content: "\f5fc";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-fa-font-brands);
+}
+
+.fa-twitter {
+  background-color: #00aced;
+}
+
+.fa-twitter::before {
+  content: "\f099";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-brands);
+}
+
+.fa-linkedin-in {
+  background-color: #007bb6;
+}
+
+.fa-linkedin-in::before {
+  content: "\f0e1";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-brands);
+}
+
+.fa-facebook-f {
+  background-color: #3b5998;
+}
+
+.fa-facebook-f::before {
+  content: "\f39e";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-brands);
+}
+
+.fa-github {
+  background-color: #333;
+}
+
+.fa-github::before {
+  content: "\f09b";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-brands);
+}
+
+.social-media > i:hover {
+  transform: translate(-240px);
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

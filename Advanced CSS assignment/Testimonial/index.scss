@@ -1,0 +1,44 @@
+@import "./constants";
+@import ".figure";
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  display: flex;
+  justify-content: center;
+  main {
+    background-color: $color-page_background;
+    article {
+      display: grid;
+      aspect-ratio: $aspect-ratio;
+      grid-template-rows: 65% 35%;
+      margin: 2.5% 5%;
+    }
+  }
+}
+
+.top {
+  border-radius: 4vw 4vw 0 0;
+  padding: 10% 7% 7.5% 7%;
+  color: $color-text;
+  font-size: $fontsize-text;
+  line-height: $line-height;
+  text-align: left;
+  background-color: $color-white;
+  box-shadow: $settings-box_shadow;
+}
+
+.footer {
+  border-radius: 0 0 4vw 4vw;
+  padding: 20% 7.5% 7.5% 7.5%;
+  color: $color-white;
+  font-size: $fontsize-text;
+  text-align: center;
+  background-color: $color-footer_background;
+  box-shadow: $settings-box_shadow;
+  .website {
+    padding: 4%;
+    color: $color-website_text;
+    font-size: $fontsize-website_text;
+  }
+}

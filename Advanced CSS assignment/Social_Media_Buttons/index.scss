@@ -1,0 +1,98 @@
+@import "./constants";
+@import "./before_setup";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: $color-background;
+
+  display: grid;
+  grid-template-rows: 1fr (6 * $height_box) 1fr;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  grid-row: 2;
+  right: -250px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+
+  i {
+    padding: $size-padding;
+    color: white;
+    // height: $height-box;
+    width: $width-box;
+    font-size: $size-font;
+    transition-duration: $duration-change;
+    a {
+      display: inline;
+      color: $color-text;
+      font-family: $font-family;
+      font-weight: $font-weight;
+      white-space: nowrap;
+    }
+  }
+}
+
+.fa-laptop-code {
+  background-color: #e17b77;
+}
+.fa-laptop-code::before {
+  content: "\f5fc";
+  @include before_setup(--fa-font-solid);
+}
+
+.fa-researchgate {
+  background-color: rgb(0, 208, 175);
+}
+.fa-researchgate::before {
+  content: "\f5fc";
+  @include before_setup(--fa-fa-font-brands);
+}
+
+.fa-twitter {
+  background-color: #00aced;
+}
+.fa-twitter::before {
+  content: "\f099";
+  @include before_setup(--fa-font-brands);
+}
+
+.fa-linkedin-in {
+  background-color: #007bb6;
+}
+.fa-linkedin-in::before {
+  content: "\f0e1";
+  @include before_setup(--fa-font-brands);
+}
+
+.fa-facebook-f {
+  background-color: #3b5998;
+}
+.fa-facebook-f::before {
+  content: "\f39e";
+  @include before_setup(--fa-font-brands);
+}
+
+.fa-github {
+  background-color: #333;
+}
+.fa-github::before {
+  content: "\f09b";
+  @include before_setup(--fa-font-brands);
+}
+
+.social-media > i:hover {
+  transform: translate($length-sliding);
+  cursor: pointer;
+}
