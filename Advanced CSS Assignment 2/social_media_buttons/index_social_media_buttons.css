@@ -1,0 +1,106 @@
+.social_media_buttons * {
+  margin: 0;
+  padding: 0;
+}
+.social_media_buttons main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #c3cfe2;
+  display: grid;
+  grid-template-rows: 1fr 240px 1fr;
+  overflow: hidden;
+}
+.social_media_buttons main .container {
+  position: absolute;
+  grid-row: 2;
+  right: -250px;
+}
+.social_media_buttons main .social-media {
+  display: flex;
+  flex-direction: column;
+}
+.social_media_buttons main .social-media i {
+  padding: 12px;
+  color: white;
+  width: 280px;
+  font-size: 16px;
+  transition-duration: 1000ms;
+}
+.social_media_buttons main .social-media i a {
+  display: inline;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+  white-space: nowrap;
+}
+.social_media_buttons .fa-laptop-code {
+  background-color: #e17b77;
+}
+.social_media_buttons .fa-laptop-code::before {
+  content: "\f5fc";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+}
+.social_media_buttons .fa-researchgate {
+  background-color: #00d0af;
+}
+.social_media_buttons .fa-researchgate::before {
+  content: "\f5fc";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-fa-font-brands);
+}
+.social_media_buttons .fa-twitter {
+  background-color: #00aced;
+}
+.social_media_buttons .fa-twitter::before {
+  content: "\f099";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-brands);
+}
+.social_media_buttons .fa-linkedin-in {
+  background-color: #007bb6;
+}
+.social_media_buttons .fa-linkedin-in::before {
+  content: "\f0e1";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-brands);
+}
+.social_media_buttons .fa-facebook-f {
+  background-color: #3b5998;
+}
+.social_media_buttons .fa-facebook-f::before {
+  content: "\f39e";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-brands);
+}
+.social_media_buttons .fa-github {
+  background-color: #333;
+}
+.social_media_buttons .fa-github::before {
+  content: "\f09b";
+  padding: 0px 25px 0px 10px;
+  display: inline;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-brands);
+}
+.social_media_buttons .social-media > i:hover {
+  transform: translate(-240px);
+  cursor: pointer;
+}/*# sourceMappingURL=index_social_media_buttons.css.map */

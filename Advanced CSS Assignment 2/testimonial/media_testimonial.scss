@@ -1,0 +1,102 @@
+@import "./constants_testimonial";
+@import "../constants_general";
+
+@media screen and (max-width: (($screen-min_width - 1) * 1px)) {
+  $factor: $screen-min_width / 500;
+  .testimonial {
+    width: 0.9 * $screen-min_width * 1px;
+    main {
+      article {
+        .top {
+          border-radius: ($factor * $border-radius_bend * 1px)
+            ($factor * $border-radius_bend * 1px) 0 0;
+          font-size: $factor * $fontsize-text_top * 1px;
+          line-height: $factor * $line-height_top * 1px;
+        }
+      }
+      .footer {
+        border-radius: 0 0 ($factor * $border-radius_bend * 1px)
+          ($factor * $border-radius_bend * 1px);
+        font-size: $factor * $fontsize-text_footer * 1px;
+        .website {
+          font-size: $factor * $fontsize-website_text * 1px;
+        }
+        .picture-field {
+          .profile-picture {
+            width: $factor * $size-figure * 1px; //234
+            height: $factor * $size-figure * 1px; //300
+            border: ($factor * $border-picture * 1px) solid $color-white;
+            // border: ($factor * $border-picture * 1px) solid green;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: ($screen-min_width * 1px)) and (max-width: (($screen-max_width - 1) *1px)) {
+  $factor: 100 / 500;
+
+  .testimonial {
+    width: 0.9 * 100vw;
+    main {
+      article {
+        .top {
+          border-radius: ($factor * $border-radius_bend * 1vw)
+            ($factor * $border-radius_bend * 1vw) 0 0;
+          font-size: $factor * $fontsize-text_top * 1vw;
+          line-height: $factor * $line-height_top * 1vw;
+        }
+        .footer {
+          border-radius: 0 0 ($factor * $border-radius_bend * 001vw)
+            ($factor * $border-radius_bend * 1vw);
+          font-size: $factor * $fontsize-text_footer * 1vw;
+          .website {
+            font-size: $factor * $fontsize-website_text * 1vw;
+          }
+          .picture-field {
+            .profile-picture {
+              width: $factor * $size-figure * 1vw; //234
+              height: $factor * $size-figure * 1vw; //300
+              border: ($factor * $border-picture * 1vw) solid $color-white;
+              // border: ($factor * $border-picture * 1vw) solid green;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: (($screen-max_width - 1) * 1px)) {
+  $factor: $screen-max_width / 500;
+  .testimonial {
+    width: 0.9 * $screen-max_width * 1px;
+    main {
+      article {
+        .top {
+          border-radius: ($factor * $border-radius_bend * 1px)
+            ($factor * $border-radius_bend * 1px) 0 0;
+          font-size: $factor * $fontsize-text_top * 1px;
+          line-height: $factor * $line-height_top * 1px;
+        }
+        .footer {
+          border-radius: 0 0 ($factor * $border-radius_bend * 1px)
+            ($factor * $border-radius_bend * 1px);
+          font-size: $factor * $fontsize-text_footer * 1px;
+          .website {
+            font-size: $factor * $fontsize-website_text * 1px;
+          }
+          .picture-field {
+            .profile-picture {
+              width: $factor * $size-figure * 1px; //234
+              height: $factor * $size-figure * 1px; //300
+              border: ($factor * $border-picture * 1px) solid $color-white;
+              // border: ($factor * $border-picture * 1px) solid green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

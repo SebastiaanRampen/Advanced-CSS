@@ -1,0 +1,39 @@
+.portfolio {
+  margin: 15px;
+  background-color: #c3cfe2;
+}
+.portfolio main > .container {
+  margin: 30px;
+  display: grid;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr;
+}
+.portfolio main > .container div {
+  top: -30px;
+  display: block;
+  aspect-ratio: 234/300;
+  border: 5px solid #6f665d;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: gray;
+}
+.portfolio main > .container div img {
+  width: 100%;
+  height: auto;
+  transition-duration: 500ms;
+  transition-delay: 250ms;
+}
+.portfolio main > .container div input {
+  visibility: hidden;
+  position: relative;
+  top: -50%;
+  display: block;
+  margin: 0 auto;
+}
+.portfolio main > .container > div:hover img {
+  opacity: 0;
+}
+.portfolio main > .container > div:hover input {
+  visibility: visible;
+}/*# sourceMappingURL=index_portfolio.css.map */

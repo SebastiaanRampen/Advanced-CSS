@@ -1,0 +1,17 @@
+@import "./constants_general";
+
+body {
+  margin: 0;
+}
+
+h1 {
+  display: inline-block !important;
+  text-align: left !important;
+  margin: 50px !important;
+  color: blue;
+}
+
+.space-between {
+  content: "";
+  height: 100px;
+}

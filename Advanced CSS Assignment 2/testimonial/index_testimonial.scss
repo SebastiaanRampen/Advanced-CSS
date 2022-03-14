@@ -1,0 +1,61 @@
+@import "./constants_testimonial";
+@import "../constants_general";
+
+.testimonial {
+  margin: 15px;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  display: flex;
+  justify-content: center;
+  background-color: $color-page_background_main;
+
+  main {
+    article {
+      display: grid;
+      aspect-ratio: $aspect-ratio_article;
+      grid-template-rows: $grid-template-rows_article;
+      margin: $margin_article;
+
+      .top {
+        padding: $padding_top;
+        color: $color-text_top;
+        text-align: left;
+        background-color: $color-white;
+        box-shadow: $settings-box_shadow;
+      }
+
+      .footer {
+        position: relative;
+        padding: $padding_footer;
+        color: $color-white;
+        background-color: $color-footer_background;
+        text-align: center;
+        box-shadow: $settings-box_shadow;
+        .website {
+          padding: $padding_website;
+          color: $color-website_text;
+        }
+        .picture-field {
+          display: flex;
+          justify-content: center;
+          position: relative;
+          top: -325%;
+
+          .profile-picture {
+            background-color: $color-white;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            img {
+              position: relative;
+              width: 100%;
+              height: auto;
+              margin-top: -15%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

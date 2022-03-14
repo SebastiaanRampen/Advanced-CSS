@@ -1,0 +1,31 @@
+@import "../constants_general";
+
+$factor: 5;
+$screen-min_width: 400;
+$screen-max_width: 750;
+
+$font-family: sans-serif;
+$font-weight: 500;
+
+$settings-box_shadow: 0 10px 10px 2px grey;
+
+$aspect-ratio_article: 0.8; //ratio width / height field : 4/5
+$grid-template-rows_article: 65% 35%;
+$margin_article: 2.5% 5%;
+
+$border-radius_bend: 20;
+$padding_top: 10% 7% 7.5% 7%;
+$color-text_top: rgb(110, 100, 100);
+$fontsize-text_top: 21;
+$line-height_top: 38;
+
+$padding_footer: 20% 7.5% 7.5% 7.5%;
+$fontsize-text_footer: 22;
+$color-footer_background: #686de0;
+
+$padding_website: 4%;
+$color-website_text: $color-page_background_main;
+$fontsize-website_text: 18;
+
+$size-figure: 110;
+$border-picture: 6;

@@ -1,0 +1,66 @@
+@media screen and (max-width: 399px) {
+  .testimonial {
+    width: 360px;
+  }
+  .testimonial main article .top {
+    border-radius: 16px 16px 0 0;
+    font-size: 16.8px;
+    line-height: 30.4px;
+  }
+  .testimonial main .footer {
+    border-radius: 0 0 16px 16px;
+    font-size: 17.6px;
+  }
+  .testimonial main .footer .website {
+    font-size: 14.4px;
+  }
+  .testimonial main .footer .picture-field .profile-picture {
+    width: 88px;
+    height: 88px;
+    border: 4.8px solid #fff;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 749px) {
+  .testimonial {
+    width: 90vw;
+  }
+  .testimonial main article .top {
+    border-radius: 4vw 4vw 0 0;
+    font-size: 4.2vw;
+    line-height: 7.6vw;
+  }
+  .testimonial main article .footer {
+    border-radius: 0 0 4vw 4vw;
+    font-size: 4.4vw;
+  }
+  .testimonial main article .footer .website {
+    font-size: 3.6vw;
+  }
+  .testimonial main article .footer .picture-field .profile-picture {
+    width: 22vw;
+    height: 22vw;
+    border: 1.2vw solid #fff;
+  }
+}
+@media screen and (min-width: 749px) {
+  .testimonial {
+    width: 675px;
+  }
+  .testimonial main article .top {
+    border-radius: 30px 30px 0 0;
+    font-size: 31.5px;
+    line-height: 57px;
+  }
+  .testimonial main article .footer {
+    border-radius: 0 0 30px 30px;
+    font-size: 33px;
+  }
+  .testimonial main article .footer .website {
+    font-size: 27px;
+  }
+  .testimonial main article .footer .picture-field .profile-picture {
+    width: 165px;
+    height: 165px;
+    border: 9px solid #fff;
+  }
+}/*# sourceMappingURL=media_testimonial.css.map */

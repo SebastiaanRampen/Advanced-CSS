@@ -1,0 +1,50 @@
+@import "./constants_portfolio";
+
+.portfolio {
+  margin: 15px;
+  background-color: $color-background_screen;
+  main > .container {
+    margin: 30px;
+    display: grid;
+    // grid-row-gap: $grid-gaps - $height-button;
+    grid-row-gap: $grid-gaps;
+    grid-column-gap: $grid-gaps;
+    grid-template-columns: 1fr;
+    div {
+      top: -$height-button;
+      display: block;
+
+      aspect-ratio: 234 / 300;
+
+      //
+      border: $border-picture;
+      border-radius: $border-radius_image;
+      overflow: hidden;
+      background-color: gray;
+      img {
+        width: 100%;
+        height: auto;
+
+        transition-duration: $duration-change;
+        transition-delay: $duration-delay;
+      }
+
+      input {
+        visibility: hidden;
+        position: relative;
+        top: $input-top;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  main > .container > div:hover {
+    img {
+      opacity: 0;
+    }
+    input {
+      visibility: visible;
+    }
+  }
+}
